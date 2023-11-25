@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy's Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    body {
+        font-family: 'Balsamiq Sans', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1856&q=80') no-repeat;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    .left {
+        color: rgb(0, 0, 0);
+        background-color: orange;
+        font-weight: bolder;
+        display: inline-block;
+        /* border: 2px solid brown; */
+        position: absolute;
+        left: 34px;
+        top: 30px;
+        font-size: 9px;
+        text-align: center;
+    }
+
+    .left img {
+        width: 65px;
+    }
+
+    .mid {
+        display: block;
+        text-align: center;
+        width: 36%;
+        margin: 46px auto;
+        /* border: 2px solid greenyellow; */
+    }
+
+    .right {
+        display: inline-block;
+        /* border: 2px solid rgb(38, 21, 219); */
+        position: absolute;
+        right: 34px;
+        top: 40px;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        background-color: bisque;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 10px 5px;
+        margin: 5px;
+        font-size: small;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(82, 158, 133);
+    }
+
+    .btn {
+        font-family: 'Balsamiq Sans', cursive;
+        margin: 7px;
+        background-color: rgba(255, 208, 138, 0.914);
+        padding: 3px 4px;
+        border-radius: 25px;
+    }
+
+    .btn:hover {
+        color: rgb(163, 163, 163);
+    }
+
+    .container {
+        color: aliceblue;
+        border-radius: 15px;
+        border: 2px solid rgb(255, 179, 0);
+        padding: 100x;
+        width: 34%;
+        margin: 170px 83px;
+    }
+    .form-group input{
+        font-family: 'Balsamiq Sans', cursive;
+        text-align: center;
+        display: block;
+        border-radius: 10px;
+        padding: 8px;
+        width: 300px;
+        margin: 5px auto;
+        font-size: 15px;
+    }
+    .container h2{
+        /* font-weight: lighter; */
+      color: rgb(255, 251, 251);
+        text-align: center;
+    }
+    .container button{
+        margin:12px auto;
+        display: block;
+        width: 90px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- LEFT BOX FOR LOGO -->
+        <div class="left">
+            <img src="img/bklogo.png" alt="">
+            <div>JOY'S FITNESS</div>
+        </div>
+        <!-- MID BOX FOR NAVIGATION -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FITNESS CALCULATOR</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!--RIGHT BOX FOR BUTTONS -->
+        <div class="right">
+            <button class="btn">Login</button>
+            <button class="btn">Join Membership</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best GYM of Badkulla now</h2>
+    <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">    
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">    
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">    
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Phone Number">    
+        </div>
+        <button class="btn" id="submitbutton">Submit</button>
+    </form>
+</div>
+</body>
+
+</html>
